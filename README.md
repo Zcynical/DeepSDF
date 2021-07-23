@@ -78,15 +78,24 @@ The only file that is required to begin an experiment is 'specs.json', which set
 
 In order to use mesh data for training a DeepSDF model, the mesh will need to be pre-processed. This can be done with the `preprocess_data.py` executable. The preprocessing code is in C++ and has the following requirements:
 
-- [CLI11][1]
-- [Pangolin][2]
-- [nanoflann][3]
-- [Eigen3][4]
+- [CLI11-Conda][1]
+```
+conda install -c conda-forge cli11
+```
 
-[1]: https://github.com/CLIUtils/CLI11
-[2]: https://github.com/stevenlovegrove/Pangolin
-[3]: https://github.com/jlblancoc/nanoflann
-[4]: https://eigen.tuxfamily.org
+- [Eigen-Conda][2]
+```
+conda install -c conda-forge eigen
+```
+- [GLEW-Conda][3]
+```
+conda install -c conda-forge glew
+```
+
+[1]: https://anaconda.org/conda-forge/cli11
+[2]: https://anaconda.org/conda-forge/eigen
+[3]: https://anaconda.org/conda-forge/glew/
+
 
 With these dependencies, the build process follows the standard CMake procedure:
 
