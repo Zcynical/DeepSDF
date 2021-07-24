@@ -91,10 +91,15 @@ conda install -c conda-forge eigen
 ```
 conda install -c conda-forge glew
 ```
+- [cmake-Conda][4]
+```
+conda install -c conda-forge cmake
+```
 
 [1]: https://anaconda.org/conda-forge/cli11
 [2]: https://anaconda.org/conda-forge/eigen
-[3]: https://anaconda.org/conda-forge/glew/
+[3]: https://anaconda.org/conda-forge/glew
+[4]: https://anaconda.org/conda-forge/cmake
 
 
 With these dependencies, the build process follows the standard CMake procedure:
